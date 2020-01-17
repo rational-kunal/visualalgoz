@@ -14,7 +14,7 @@ class App extends React.Component {
           var temp = _values[j];
           _values[j] = _values[j+1];
           _values[j + 1] = temp;
-          this.Q.push([j, j+1]);
+          this.Q.push([..._values]);
         }
       }
     }
@@ -32,15 +32,13 @@ class App extends React.Component {
     var delay = 10;
     var Q = this.Q;
     for(var i=0; i<Q.length; i++){
-      let [u, v] = [Q[i][0], Q[i][1]];
+      let newValues = Q[i];
 
       setTimeout(() => {
-        var temp = values[u];
-        values[u] = values[v];
-        values[v] = temp;
+        values = newValues;
         i += 1;
         // f();
-        console.log(values,u, v);
+        console.log(values);
 
         this.forceUpdate();
       }, delay);
