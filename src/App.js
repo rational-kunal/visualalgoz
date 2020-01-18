@@ -1,5 +1,5 @@
 import React from 'react';
-import SortView from "./SortView";
+import SortView from "./components/sorter/SortView";
 import logo from './logo.svg';
 import './App.css';
 
