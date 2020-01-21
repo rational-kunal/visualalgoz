@@ -2,7 +2,7 @@ import React from "react";
 import SortView from "./SortView";
 
 class SortAnimator extends React.Component {
-    values = [10, 100, 40, 30, 50, 10, 100, 400, 300, 50, 100, 100, 40];
+    values = [10, 100, 40, 30, 50, 10, 100, 400, 300, 50, 100, 100, 40, 10, 100, 40, 30, 50, 10, 100, 400, 300, 50, 100, 100, 40, 10, 100, 40, 30, 50, 10, 100, 400, 300, 50, 100, 100, 40, 10, 100, 40, 30, 50, 10, 100, 400, 300, 50, 100, 100, 40, 10, 100, 40, 30, 50, 10, 100, 400, 300, 50, 100, 100, 40, 10, 100, 40, 30, 50];
     Q = [];
     animationQueue = [];
 
@@ -17,13 +17,12 @@ class SortAnimator extends React.Component {
 
                 this.forceUpdate();
             }, delay);
-            delay += 800;
+            delay += 80;
         }
     }
 
     constructor({ sortingFunction }) {
         super(null);
-
         this.animationQueue = sortingFunction([...this.values]);
     }
 

@@ -3,7 +3,6 @@ import SortItem from "./SortItem";
 
 class SortView extends React.Component {
   values = [];
-
   render() {
     return (
       <div
