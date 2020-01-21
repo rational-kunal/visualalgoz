@@ -1,12 +1,25 @@
-import React, {useState} from 'react';
+import React, { useState } from "react";
+import SortItem from "./SortItem";
 
-function SortView({ value }) {
-    // const [calue, setValue] = useState(value);
+class SortView extends React.Component {
+  values = [];
+
+  render() {
     return (
-        <div style={{ width: value, height: value, margin: "4px", backgroundColor: "black", transition: "all 0.2s cubic-bezier(0,-0.37,1,1.34)" }}>
-
-        </div>
-    )
+      <div
+        style={{
+          display: "flex",
+          width: "100vw",
+          height: "100vh",
+          alignItems: "center"
+        }}
+      >
+        {this.props.values.map(v => (
+          <SortItem value={v} />
+        ))}
+      </div>
+    );
+  }
 }
 
 export default SortView;
