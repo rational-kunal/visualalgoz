@@ -12,26 +12,32 @@ class SortAnimator extends React.Component {
     Q = [];
     animationQueue = [];
     sortItems = [];
+    intervalI = 0;
+    interval = null;
+    sortingFunction = null;
 
-    animate() {
-        let delay = 10;
-        for (let i = 0; i < this.animationQueue.length; i++) {
-            let newPositions = this.animationQueue[i];
+    doAnimate() {
+        if (this.intervalI === this.animationQueue.length-1) clearInterval( this.interval );
 
-            setTimeout(() => {
-                for (let itemI = 0; itemI < newPositions.length; itemI++) {
-                    this.refItems[ newPositions[itemI]["position"] ].current.changeData({size: newPositions[itemI]["value"], color: newPositions[itemI]["color"]});
-                }
+        let newPositions = this.animationQueue[ this.intervalI ];
 
-                this.forceUpdate();
-            }, delay);
-            delay += 800;
+        for (let itemI = 0; itemI < newPositions.length; itemI++) {
+            this.refItems[ newPositions[itemI]["position"] ].current.changeData({size: newPositions[itemI]["value"], color: newPositions[itemI]["color"]});
         }
+
+        this.forceUpdate();
+
+        this.intervalI += 1;
     }
 
-    constructor({ sortingFunction }) {
-        super(null);
+    animate() {
+        clearInterval( this.interval );
+        this.intervalI = 0;
+        this.interval = setInterval(this.doAnimate, 400);
+    }
 
+    randomize() {
+        this.values = []
         for (let i=0; i<10; i++) {
             this.values.push( randomBetween(70, 600) );
         }
@@ -39,9 +45,18 @@ class SortAnimator extends React.Component {
         this.refItems = this.values.map(x => React.createRef());
         this.sortItems = this.values.map((x, i) =>( <SortItem value={x} ref={ this.refItems[i] } /> ));
 
-        this.animationQueue = sortingFunction([...this.values]);
+        this.animationQueue = this.sortingFunction([...this.values]);
+    }
 
-        console.log(this.animationQueue);
+    constructor({ sortingFunction }) {
+        super(null);
+
+        this.sortingFunction = sortingFunction;
+
+        this.doAnimate = this.doAnimate.bind(this);
+        this.randomize = this.randomize.bind(this);
+
+        this.randomize();
     }
 
     render() {
