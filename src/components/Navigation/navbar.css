@@ -6,12 +6,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    background-color: #430d27;
 }
 
 .navbar-item {
     padding: 8px;
-    background-color: #61dafb;
-    color: red;
+    background-color: #582233;
+    color: #facf5a;
     margin: 4px;
     border-radius: 4px;
 
@@ -19,6 +21,6 @@
 }
 
 .navbar-item:hover {
-    background-color: red;
+    background-color: #713045;
     border-radius: 8gpx;
 }

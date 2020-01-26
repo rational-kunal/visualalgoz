@@ -1,5 +1,6 @@
 import React from "react";
 import SortItem from "./SortItem";
+import './sortanimator.css';
 
 function randomBetween(min, max) {
     return Math.random() * (max - min) + min;
@@ -32,7 +33,7 @@ class SortAnimator extends React.Component {
         super(null);
 
         for (let i=0; i<10; i++) {
-            this.values.push( randomBetween(100, 800) );
+            this.values.push( randomBetween(70, 600) );
         }
 
         this.refItems = this.values.map(x => React.createRef());
@@ -46,7 +47,7 @@ class SortAnimator extends React.Component {
     render() {
         return (
             <div>
-                <div style={{ display: "flex", justifyContent: "center", alignItems: "center", width: "100vw", height: "90vh" }}>
+                <div className="animator">
                     { this.sortItems }
                 </div>
             </div>

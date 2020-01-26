@@ -6,15 +6,15 @@
 .focused {
     transform: scale(1.1);
 
-    background-color: brown;
+    background-color: #30e3ca;
 
-    border-radius: 32px;
+    border-radius: 8px;
 }
 
 .normal {
     box-shadow: 0 0px 52px rgba(0, 0, 0, 0.07);
 
-    background-color: black;
+    background-color: #107a8b;
 
-    border-radius: 8px;
+    border-radius: 64px;
 }
