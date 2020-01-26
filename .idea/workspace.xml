@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6b79655-4e68-4dde-b099-66e20ce9168c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/core/sort/QuickSort.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/core/sort/BubbleSort.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/core/sort/BubbleSort.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/sorter/SortAnimator.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sorter/SortAnimator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/sorter/SortItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sorter/SortItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/sorter/SortView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sorter/SortView.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/sorter/sortItem.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sorter/sortItem.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,6 +20,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -28,6 +32,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$USER_HOME$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -77,7 +82,11 @@
       <workItem from="1579621709980" duration="294000" />
       <workItem from="1579622428088" duration="633000" />
       <workItem from="1579625527838" duration="4226000" />
-      <workItem from="1579666488607" duration="1263000" />
+      <workItem from="1579666488607" duration="1542000" />
+      <workItem from="1579705871846" duration="230000" />
+      <workItem from="1579723413344" duration="638000" />
+      <workItem from="1579800229879" duration="4051000" />
+      <workItem from="1580007776327" duration="357000" />
     </task>
     <servers />
   </component>

@@ -3,7 +3,6 @@ import React from "react";
 // import SortView from "./components/sorter/SortView";
 import SortAnimator from "./components/sorter/SortAnimator";
 import bubbleSort from "./components/core/sort/BubbleSort";
-// import mergeSort from "./components/core/sort/MergeSort";
 import quickSort from "./components/core/sort/QuickSort";
 import "./App.css";
 
@@ -12,7 +11,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <SortAnimator sortingFunction={ quickSort } />
+        <SortAnimator sortingFunction={ bubbleSort } />
       </div>
     );
   }
