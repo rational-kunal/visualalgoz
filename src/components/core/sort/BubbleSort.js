@@ -9,7 +9,10 @@ export default function bubbleSort(unsortedArray) {
                 unsortedArray[j + 1] = temp;
 
                 [position[j], position[j+1]] = [position[j+1], position[j]];
-                positions.push([ j, j+1 ]);
+                positions.push([
+                    { position: j, value: unsortedArray[j] },
+                    { position: j+1, value: unsortedArray[j+1] }
+                ]);
             }
         }
     }
