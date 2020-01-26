@@ -1,36 +1,33 @@
 import React from "react";
+import './sortItem.css';
 
-const ANIMATION_DURATION = 200;
+const ANIMATION_DURATION = 380;
 
 class SortItem extends React.Component{
 
     constructor({ value }) {
         super(null);
 
-        this.state = { size: value, color: "black", radius: "8px" };
+        this.state = { size: value, className:"normal" };
     }
 
     changeData({ size, color }) {
-        if (size !== this.state.size) {
-            this.setState({ radius: "32px" });
-            setTimeout(()=>( this.setState({radius: "8px"}) ), ANIMATION_DURATION);
-        }
         this.setState({ size: size });
-        if (color) {
-            this.setState({ color: color });
-            setTimeout(()=>( this.setState({color: "black"}) ), ANIMATION_DURATION);
-        }
+        this.setState({ className: "focused" });
+        // if (color) {
+        //     this.setState({ color: color });
+            setTimeout(()=>( this.setState({ className: "normal"}) ), ANIMATION_DURATION);
+        // }
     }
 
     render() {
         return (
             <div
+                className={ this.state.className }
                 style={{
-                    width: 100,
+                    width: "5vw",
                     height: this.state.size,
-                    margin: "10px",
-                    backgroundColor: this.state.color,
-                    borderRadius: this.state.radius,
+                    margin: "0.5vw",
                     transition: "all 0.8s cubic-bezier(.38,1.08,0,1.19)"
                 }}
             />

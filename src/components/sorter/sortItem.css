@@ -2,3 +2,19 @@
     border-radius: 20px;
     background-color: cyan;
 }
+
+.focused {
+    transform: scale(1.1);
+
+    background-color: brown;
+
+    border-radius: 32px;
+}
+
+.normal {
+    box-shadow: 0 0px 52px rgba(0, 0, 0, 0.07);
+
+    background-color: black;
+
+    border-radius: 8px;
+}

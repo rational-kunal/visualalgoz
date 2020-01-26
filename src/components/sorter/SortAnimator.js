@@ -24,7 +24,7 @@ class SortAnimator extends React.Component {
 
                 this.forceUpdate();
             }, delay);
-            delay += 240;
+            delay += 800;
         }
     }
 
@@ -47,7 +47,7 @@ class SortAnimator extends React.Component {
         return (
             <div>
                 <button onClick={() => this.animate()}>start</button>
-                <div style={{ display: "flex" }}>
+                <div style={{ display: "flex", justifyContent: "center", alignItems: "center", width: "100vw", height: "100vh" }}>
                     { this.sortItems }
                 </div>
             </div>
