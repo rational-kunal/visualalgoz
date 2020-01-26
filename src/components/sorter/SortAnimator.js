@@ -1,9 +1,12 @@
 import React from "react";
-import SortView from "./SortView";
 import SortItem from "./SortItem";
 
+function randomBetween(min, max) {
+    return Math.random() * (max - min) + min;
+}
+
 class SortAnimator extends React.Component {
-    values = [10, 40, 30, 20, 330, 240, 50, 60, 20, 90, 110, 120, 20, 100, 150, 170, 200, 210];
+    values = [];
     position = [0, 0];
     Q = [];
     animationQueue = [];
@@ -16,20 +19,26 @@ class SortAnimator extends React.Component {
 
             setTimeout(() => {
                 for (let itemI = 0; itemI < newPositions.length; itemI++) {
-                    this.sortItems[ newPositions[itemI]["position"] ] = < SortItem value={ newPositions[itemI]["value"] } />;
+                    this.refItems[ newPositions[itemI]["position"] ].current.changeData({size: newPositions[itemI]["value"], color: newPositions[itemI]["color"]});
                 }
 
                 this.forceUpdate();
             }, delay);
-            delay += 100;
+            delay += 240;
         }
     }
 
     constructor({ sortingFunction }) {
         super(null);
-        this.animationQueue = sortingFunction([...this.values]);
 
-        this.sortItems = this.values.map(x =>( <SortItem value={x} /> ));
+        for (let i=0; i<10; i++) {
+            this.values.push( randomBetween(100, 800) );
+        }
+
+        this.refItems = this.values.map(x => React.createRef());
+        this.sortItems = this.values.map((x, i) =>( <SortItem value={x} ref={ this.refItems[i] } /> ));
+
+        this.animationQueue = sortingFunction([...this.values]);
 
         console.log(this.animationQueue);
     }

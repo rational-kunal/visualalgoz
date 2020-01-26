@@ -3,9 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="d6b79655-4e68-4dde-b099-66e20ce9168c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/core/sort/BubbleSort.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/core/sort/BubbleSort.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/sorter/SortAnimator.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sorter/SortAnimator.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/sorter/SortView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sorter/SortView.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/sorter/SortItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sorter/SortItem.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,8 +18,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -84,6 +86,7 @@
       <workItem from="1579723413344" duration="638000" />
       <workItem from="1579800229879" duration="4051000" />
       <workItem from="1580007776327" duration="357000" />
+      <workItem from="1580032479754" duration="1550000" />
     </task>
     <servers />
   </component>
