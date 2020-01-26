@@ -46,8 +46,7 @@ class SortAnimator extends React.Component {
     render() {
         return (
             <div>
-                <button onClick={() => this.animate()}>start</button>
-                <div style={{ display: "flex", justifyContent: "center", alignItems: "center", width: "100vw", height: "100vh" }}>
+                <div style={{ display: "flex", justifyContent: "center", alignItems: "center", width: "100vw", height: "90vh" }}>
                     { this.sortItems }
                 </div>
             </div>

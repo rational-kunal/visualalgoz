@@ -19,7 +19,7 @@ class SortView extends React.Component {
               style={{
                   display: "flex",
                   width: "100vw",
-                  height: "100vh",
+                  height: "90vh",
                   alignItems: "center"
               }}
           >
