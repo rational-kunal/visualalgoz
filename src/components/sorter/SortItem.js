@@ -1,7 +1,7 @@
 import React from "react";
 import './sortItem.css';
 
-const ANIMATION_DURATION = 380;
+const ANIMATION_DURATION = 150;
 
 class SortItem extends React.Component{
 
@@ -13,7 +13,7 @@ class SortItem extends React.Component{
 
     changeData({ size, color }) {
         this.setState({ size: size });
-        this.setState({ className: "focused" });
+        this.setState({ className: color });
         // if (color) {
         //     this.setState({ color: color });
             setTimeout(()=>( this.setState({ className: "normal"}) ), ANIMATION_DURATION);
@@ -25,9 +25,9 @@ class SortItem extends React.Component{
             <div
                 className={ this.state.className }
                 style={{
-                    width: "5vw",
+                    width: "20px",
                     height: this.state.size,
-                    margin: "0.5vw",
+                    margin: "5px",
                     transition: "all 0.8s cubic-bezier(.38,1.08,0,1.19)"
                 }}
             />

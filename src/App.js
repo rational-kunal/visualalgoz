@@ -17,14 +17,14 @@ class App extends React.Component {
   changeAlgorithm( algorithm ) {
     this.setState({ algorithm: algorithm });
 
-    this.state.refToAnimator.current.animate();
+    this.state.refToAnimator.current.animate( algorithm );
   }
 
   render() {
     return (
       <div className="App">
         <NavBar changeAlgorithm={ this.changeAlgorithm } />
-        <SortAnimator sortingFunction={ this.state.algorithm } ref={ this.state.refToAnimator } />
+        <SortAnimator sortingFunction=""  ref={ this.state.refToAnimator } />
       </div>
     );
   }

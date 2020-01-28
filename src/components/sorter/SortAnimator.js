@@ -30,22 +30,22 @@ class SortAnimator extends React.Component {
         this.intervalI += 1;
     }
 
-    animate() {
+    animate( sortingFunction ) {
+        this.animationQueue = sortingFunction([...this.values]);
+
         clearInterval( this.interval );
         this.intervalI = 0;
-        this.interval = setInterval(this.doAnimate, 400);
+        this.interval = setInterval(this.doAnimate, 180);
     }
 
     randomize() {
-        this.values = []
-        for (let i=0; i<10; i++) {
+        this.values = [];
+        for (let i=0; i<21; i++) {
             this.values.push( randomBetween(70, 600) );
         }
 
         this.refItems = this.values.map(x => React.createRef());
         this.sortItems = this.values.map((x, i) =>( <SortItem value={x} ref={ this.refItems[i] } /> ));
-
-        this.animationQueue = this.sortingFunction([...this.values]);
     }
 
     constructor({ sortingFunction }) {

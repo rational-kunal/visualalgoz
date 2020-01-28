@@ -6,7 +6,7 @@ import quickSort from "../core/sort/QuickSort";
 
 export default class NavBar extends React.Component {
     onAlgorithmChange(algorithm) {
-        this.props.changeAlgorithm( bubbleSort );
+        this.props.changeAlgorithm( algorithm );
     }
 
     render() {

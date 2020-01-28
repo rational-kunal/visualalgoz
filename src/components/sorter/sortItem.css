@@ -18,3 +18,19 @@
 
     border-radius: 64px;
 }
+
+.split {
+    /*transform: scale(1.1);*/
+
+    background-color: yellow;
+
+    border-radius: 32px;
+}
+
+.join {
+    /*transform: scale(1.1);*/
+
+    background-color: green;
+
+    border-radius: 32px;
+}
