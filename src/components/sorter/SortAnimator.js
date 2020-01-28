@@ -35,7 +35,7 @@ class SortAnimator extends React.Component {
 
         clearInterval( this.interval );
         this.intervalI = 0;
-        this.interval = setInterval(this.doAnimate, 180);
+        this.interval = setInterval(this.doAnimate, 500);
     }
 
     randomize() {

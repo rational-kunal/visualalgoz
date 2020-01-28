@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d6b79655-4e68-4dde-b099-66e20ce9168c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navigation/NavBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation/NavBar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/core/sort/MergeSort.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/core/sort/MergeSort.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/core/sort/QuickSort.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/core/sort/QuickSort.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/sorter/SortAnimator.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sorter/SortAnimator.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/sorter/SortItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sorter/SortItem.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/sorter/sortItem.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sorter/sortItem.css" afterDir="false" />
@@ -90,6 +88,8 @@
       <workItem from="1580032479754" duration="4444000" />
       <workItem from="1580058728535" duration="5767000" />
       <workItem from="1580141634297" duration="6943000" />
+      <workItem from="1580184826605" duration="998000" />
+      <workItem from="1580223493451" duration="941000" />
     </task>
     <servers />
   </component>

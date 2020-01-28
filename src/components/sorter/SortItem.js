@@ -1,7 +1,7 @@
 import React from "react";
 import './sortItem.css';
 
-const ANIMATION_DURATION = 150;
+const ANIMATION_DURATION = 320;
 
 class SortItem extends React.Component{
 
