@@ -23,7 +23,7 @@ export default function quickSort(values) {
             while ((lowIndex <= highIndex) && (unsortedArray[lowIndex] <= pivot)) {
                 lowIndex += 1;
                 stepValues.push([
-                    { position: lowIndex, value: unsortedArray[lowIndex], color: "split" },
+                    { position: lowIndex, value: unsortedArray[lowIndex], color: "split",  },
                     { position: highIndex, value: unsortedArray[highIndex], color: "split" },
                     { position: startIndex, value: unsortedArray[startIndex], color: "pivot" }
                 ]);

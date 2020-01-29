@@ -20,6 +20,7 @@ class SortAnimator extends React.Component {
         if (this.intervalI === this.animationQueue.length-1) clearInterval( this.interval );
 
         let newPositions = this.animationQueue[ this.intervalI ];
+        console.log(this.intervalI, newPositions);
 
         for (let itemI = 0; itemI < newPositions.length; itemI++) {
             this.refItems[ newPositions[itemI]["position"] ].current.changeData({size: newPositions[itemI]["value"], color: newPositions[itemI]["color"]});

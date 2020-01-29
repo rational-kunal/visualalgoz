@@ -16,6 +16,7 @@ class SortItem extends React.Component{
         this.setState({ className: color });
         // if (color) {
         //     this.setState({ color: color });
+        if (color !== "pivot")
             setTimeout(()=>( this.setState({ className: "normal"}) ), ANIMATION_DURATION);
         // }
     }
