@@ -23,7 +23,9 @@ class SortAnimator extends React.Component {
         console.log(this.intervalI, newPositions);
 
         for (let itemI = 0; itemI < newPositions.length; itemI++) {
-            this.refItems[ newPositions[itemI]["position"] ].current.changeData({size: newPositions[itemI]["value"], color: newPositions[itemI]["color"]});
+            if (newPositions[itemI]["value"]) {
+                this.refItems[ newPositions[itemI]["position"] ].current.changeData({size: newPositions[itemI]["value"], color: newPositions[itemI]["color"]});
+            }
         }
 
         this.forceUpdate();
