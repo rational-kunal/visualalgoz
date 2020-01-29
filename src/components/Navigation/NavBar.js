@@ -3,6 +3,7 @@ import './navbar.css';
 import bubbleSort from "../core/sort/BubbleSort";
 import mergeSort from "../core/sort/MergeSort";
 import quickSort from "../core/sort/QuickSort";
+import insertSort from "../core/sort/InsertionSort";
 
 export default class NavBar extends React.Component {
     onAlgorithmChange(algorithm) {
@@ -16,6 +17,7 @@ export default class NavBar extends React.Component {
                 <div className="navbar-item" onClick={(x)=>( this.onAlgorithmChange( bubbleSort ) )}> bubble sort </div>
                 <div className="navbar-item" onClick={(x)=>( this.onAlgorithmChange( mergeSort ) )}> merge sort </div>
                 <div className="navbar-item" onClick={(x)=>( this.onAlgorithmChange( quickSort ) )}> quick sort </div>
+                <div className="navbar-item" onClick={(x)=>( this.onAlgorithmChange( insertSort ) )}> insertion sort </div>
 
             </div>
         )
